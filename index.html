@@ -1,0 +1,36 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  
+  <body>
+    <div class="container">
+			<a href="./login.html">
+				<button>Login</button>
+			</a>
+      <h1>Contact Us</h1>
+      <form action="signup.php" target="_blank" method="post">
+        <label for="first-name">First Name*</label>
+        <input type="text" id="first-name" name="first-name" placeholder="Your first name..." required>
+        
+        <label for="last-name">Last Name*</label>
+        <input type="text" id="last-name" name="last-name" placeholder="Your last name..." required>
+        
+        <label for="email">Email*</label>
+        <input type="email" id="email" name="email" placeholder="Your email address..." required>
+        
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="Your phone number...">
+        
+        <label for="message">Message*</label>
+        <textarea id="message" name="message" placeholder="Your message..." style="height:200px" required></textarea>
+        
+				<input type="hidden" name="form-submitted" value="1">
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </body>
+</html>
